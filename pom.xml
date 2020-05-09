@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.evoa.cloud</groupId>
-    <artifactId>usercenter</artifactId>
+    <artifactId>user-center</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>usercenter</name>
     <description>user-center</description>
