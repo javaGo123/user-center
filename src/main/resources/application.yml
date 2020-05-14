@@ -45,6 +45,13 @@ spring:
               groupId: SENTINEL_GROUP
               rule-type: param-flow
 
+  zipkin:
+    base-url: http://127.0.0.1:9411
+    discovery-client-enabled: false
+  sleuth:
+    sampler:
+      probability: 1.0
+
 server:
   port: 9000
 
@@ -52,9 +59,11 @@ user-center:
   ribbon:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
 
+
 logging:
   level:
-    com.evoa.cloud.contentcenter: debug
+    com.evoa.cloud.usercenter: debug
+    org.springframework.cloud.sleuth: debug
 
 management:
   endpoints:
